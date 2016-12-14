@@ -1,0 +1,90 @@
+//
+//  YourProject-Prefix.pch
+//  
+//
+//  Created by Prem Kumar on 01/12/16.
+//
+//
+
+#ifndef YourProject_Prefix_pch
+#define YourProject_Prefix_pch
+#define IS_IPHONE_4_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
+#define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+#define ApiBaseURL @"http://gts-sedaya.com/demo/dtrade/classyappapi.php?status="
+#define ApiBaseURLNew @"http://dtrade.my/classyappapi.php?status="
+
+
+#define RateCardURL @"http://www.hellocabs.com.mm/en/content/rate-card"
+#define PrimiarCabURL @"http://www.hellocabs.com.mm"
+
+
+#import "AFNetworking.h"
+#import "ProgressHUD.h"
+#import "ActionSheetDatePicker.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "SideView.h"
+#import "UIAlertView+Blocks.h"
+#import "ADPageControl.h"
+#import "LoginViewController.h"
+#import "ViewController.h"
+#import "ForgotViewController.h"
+#import "CountryViewController.h"
+#import "FavCellSmall.h"
+#import "SignupViewController.h"
+#import "DashboardViewController.h"
+#import "AssignmentTableViewCell.h"
+#import "SubCatViewController.h"
+#import "ListViewController.h"
+#import "DetailTableViewCell.h"
+#import "StarRatingView.h"
+#import "ExibitionViewController.h"
+#import "ExcibitionTableViewCell.h"
+#import "SettingsViewController.h"
+#import "BlockAlertView.h"
+#import "BlockActionSheet.h"
+#import "BlockTextPromptAlertView.h"
+#import "BlockTableAlertView.h"
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "Annotation.h"
+#import "ProfileViewController.h"
+#import <GoogleMaps/GoogleMaps.h>
+#import "EditViewController.h"
+#import "LeveyPopListView.h"
+#import "SearchListViewController.h"
+#import "StarRatingControl.h"
+#import "ContactViewController.h"
+#import "AboutViewController.h"
+#import "DetailViewController.h"
+#import "JScrollView+PageControl+AutoScroll.h"
+#import "HCSStarRatingView.h"
+#import "JPSThumbnailAnnotation.h"
+#import "CustomIOSAlertView.h"
+#import "ExciSubCatViewController.h"
+#import "ExciCatViewController.h"
+#import "ExciListViewController.h"
+#import "ExibitionSearchViewController.h"
+#import "ExiDetailViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#define SupportLabel @"Support"
+#define SupportLabel_KA @"Support Kanada"
+
+
+
+
+
+
+
+#endif /* YourProject_Prefix_pch */

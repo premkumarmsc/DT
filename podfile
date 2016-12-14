@@ -1,0 +1,17 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, ’10.0’
+target ‘DTrade’ do
+pod 'IQKeyboardManager'
+pod 'SVProgressHUD'
+pod 'MBProgressHUD', '~> 1.0.0'
+pod 'HMSegmentedControl'
+pod 'THCalendarDatePicker', '~> 1.2.6'
+pod 'AFNetworking', '~> 3.0'
+pod "GKActionSheetPicker"
+pod 'SDWebImage', '~>3.7'
+pod 'ActionSheetPicker-3.0', '~> 2.2.0'
+pod 'GoogleMaps'
+pod 'GooglePlaces'
+pod 'GooglePlacePicker'
+pod 'HCSStarRatingView', '~> 1.4.5'
+end

@@ -14,16 +14,107 @@
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>fb572376846303623</string>
+            </array>
+        </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>572376846303623</string>
+    <key>FacebookDisplayName</key>
+    <string>DTrade</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fbapi</string>
+        <string>fb-messenger-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
+    </array>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>This app requires access to the camera.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Need Location</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app requires access to the photo library.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>ZawgyiOne.ttf</string>
+		<string>HelveticaLTStd-UltraComp.otf</string>
+		<string>swisscl.ttf</string>
+		<string>swisseb.ttf</string>
+		<string>swissek.ttf</string>
+		<string>swissel.ttf</string>
+		<string>swissi.ttf</string>
+		<string>swissk.ttf</string>
+		<string>swisski.ttf</string>
+		<string>swissko.ttf</string>
+		<string>swissl.ttf</string>
+		<string>swissli.ttf</string>
+		<string>texgyreadventor-bold.otf</string>
+		<string>texgyreadventor-bolditalic.otf</string>
+		<string>texgyreadventor-italic.otf</string>
+		<string>texgyreadventor-regular.otf</string>
+		<string>swisscli.ttf</string>
+		<string>swisse.ttf</string>
+		<string>swisseb.ttf</string>
+		<string>Helvetica-Bold.ttf</string>
+		<string>Helvetica-BoldOblique.ttf</string>
+		<string>HelveticaNeue-MediumCond.otf</string>
+		<string>HelveticaNeue_Lt.ttf</string>
+		<string>OpenSans-Italic.ttf</string>
+		<string>OpenSans-Light.ttf</string>
+		<string>OpenSans-LightItalic.ttf</string>
+		<string>OpenSans-Regular.ttf</string>
+		<string>OpenSans-Semibold.ttf</string>
+		<string>OpenSans-SemiboldItalic.ttf</string>
+		<string>swiss.ttf</string>
+		<string>swisscbi.ttf</string>
+		<string>swisscbo.ttf</string>
+		<string>swissci.ttf</string>
+		<string>swissck.ttf</string>
+		<string>swisscki.ttf</string>
+		<string>swissb.ttf</string>
+		<string>swissbi.ttf</string>
+		<string>swisscb.ttf</string>
+		<string>swissbo.ttf</string>
+		<string>swissc.ttf</string>
+		<string>HelveticaNeueLTStd Lt.otf</string>
+		<string>HelveticaNeueLTStd-BdEx.otf</string>
+		<string>HelveticaNeueLTStd-BlkEx.otf</string>
+		<string>HelveticaNeueLTStd-BlkExO.otf</string>
+		<string>HelveticaNeueLTStd-Ex.otf</string>
+		<string>HelveticaNeueLTStd-Md.otf</string>
+		<string>HelveticaNeueLTStd-MdCn.otf</string>
+		<string>HelveticaNeueLTStd-MdCnO.otf</string>
+		<string>OpenSans-Bold.ttf</string>
+		<string>OpenSans-BoldItalic.ttf</string>
+		<string>OpenSans-ExtraBold.ttf</string>
+		<string>OpenSans-ExtraBoldItalic.ttf</string>
+		<string>HelveticaNeueLTStd-ExO.otf</string>
+		<string>Helvetica-Light.ttf</string>
+		<string>Helvetica-LightOblique.ttf</string>
+		<string>helvetica-neue-medium.ttf</string>
+		<string>helvetica-normal.ttf</string>
+		<string>Helvetica-Oblique.ttf</string>
+		<string>Helvetica.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -31,8 +122,8 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 @interface AppDelegate ()
 
 @end
@@ -16,9 +16,33 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [[FBSDKApplicationDelegate sharedInstance] application:application
+                             didFinishLaunchingWithOptions:launchOptions];
+    
+    sleep(2);
+    application.statusBarStyle = UIStatusBarStyleLightContent;
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    ViewController *vwObj = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    UINavigationController *naviObj =[[UINavigationController alloc]initWithRootViewController:vwObj];
+    self.window.rootViewController=naviObj;
+    [self.window makeKeyAndVisible];
     return YES;
+    
 }
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    BOOL handled = [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                                  openURL:url
+                                                        sourceApplication:sourceApplication
+                                                               annotation:annotation
+                    ];
+    // Add any custom logic here.
+    return handled;
+} 
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
